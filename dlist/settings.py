@@ -145,7 +145,7 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Allow only Heroku to host the project
-    ALLOWED_HOSTS = ['thawing-basin-19705.herokuapp.com']
+    ALLOWED_HOSTS = ['cfcdonors.herokuapp.com']
     DEBUG = False
 
 
