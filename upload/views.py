@@ -42,7 +42,7 @@ def index(request):
                 donate = "$" + donate
                 if donate == "$None":
                     donate = ""
-                date = str(sheet.cell(row=rowNum, column=5).value)
+                date = str(sheet.cell(row=rowNum, column=7).value)
                 year = date[2:4]
                 if year == "ne":
                     year = ""
@@ -53,7 +53,7 @@ def index(request):
                     addressNumber = addressNumber1.group(0)
                     donate = str(sheet.cell(row=rowNum, column=5).value)
                     donate = "$" + donate
-                    date = str(sheet.cell(row=rowNum, column=6).value)
+                    date = str(sheet.cell(row=rowNum, column=8).value)
                     year = date[2:4]
                 if firstName is "_" or lastName is "Anonymous":
                     text_file.write("""  <p>{} (Mr./Ms.) {} {} {}</p>""".format(addressNumber, lastName, donate, year) + '\n')
